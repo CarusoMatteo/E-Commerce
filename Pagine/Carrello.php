@@ -16,7 +16,8 @@
     ?>
 
     <!-- Per usare le icone MDI -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0">
 
     <script>
         try {
@@ -28,10 +29,10 @@
             username = username.replace("%20", " ");
 
             if (username == null)
-                window.location.href = "Login.html";
+                window.location.href = "Login.php";
 
         } catch {
-            window.location.href = "Login.html?errore=nologin";
+            window.location.href = "Login.php?errore=nologin";
         }
 
         function LinkNegozio() {
@@ -92,7 +93,7 @@
             </span>
         </div>
 
-        <a href="Login.html">
+        <a href="Login.php">
             Esci
         </a>
 

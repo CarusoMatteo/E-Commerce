@@ -30,10 +30,10 @@
             username = username.replace("%20", " ");
 
             if (username == null)
-                window.location.href = "Login.html";
+                window.location.href = "Login.php";
 
         } catch {
-            window.location.href = "Login.html?errore=nologin";
+            window.location.href = "Login.php?errore=nologin";
         }
 
         function LinkNegozio() {
@@ -94,7 +94,7 @@
             </span>
         </div>
 
-        <a href="Login.html">
+        <a href="Login.php">
             Esci
         </a>
 

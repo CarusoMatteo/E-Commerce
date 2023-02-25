@@ -18,4 +18,4 @@ try {
     die;
 }
 
-header("Location: ../Html/Account.php?username=" . $_GET['username']);
+header("Location: ../Pagine/Account.php?username=" . $_GET['username']);

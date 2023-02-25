@@ -19,7 +19,7 @@ try {
 mysqli_close($conn);
 
 if ($ok) {
-    header("location: ../Html/Login.html");
+    header("location: ../Pagine/Login.php");
 } else {
-    header("location: ../Html/Registrazione.html?errore=usernameusato");
+    header("location: ../Pagine/Registrazione.php?errore=usernameusato");
 }

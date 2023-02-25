@@ -16,4 +16,4 @@ try {
     die;
 }
 
-header("Location: ../Html/Carrello.php?username=" . $_GET['username']);
+header("Location: ../Pagine/Carrello.php?username=" . $_GET['username']);

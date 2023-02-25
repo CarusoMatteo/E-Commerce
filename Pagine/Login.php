@@ -6,7 +6,6 @@
     <title>
         Login - Ferramenta Caruso
     </title>
-    <link rel="stylesheet" href="../Css/Generale.css">
     <link rel="stylesheet" href="../Css/Login-Registrazione.css">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
@@ -92,7 +91,7 @@
             <input type="text" class="login" name="Password" placeholder="Password" required>
 
             <h4>
-                Non ancora iscritto? <a href="Registrazione.html">Iscriviti</a>!
+                Non ancora iscritto? <a href="Registrazione.php">Iscriviti</a>!
             </h4>
 
             <input type="submit" value="Accedi">

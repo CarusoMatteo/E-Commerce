@@ -58,4 +58,4 @@ mysqli_query($conn, $cancella);
 
 mysqli_close($conn);
 
-header("Location: ../Html/Carrello.php?username=$username");
+header("Location: ../Pagine/Carrello.php?username=$username");

@@ -47,4 +47,4 @@ else {
     }
 }
 
-header("Location: ../Html/Negozio.php?username=$username");
+header("Location: ../Pagine/Negozio.php?username=$username");

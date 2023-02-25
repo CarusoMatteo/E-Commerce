@@ -17,7 +17,7 @@ $exists = mysqli_fetch_assoc(mysqli_query($conn, $query))['ris'];
 mysqli_close($conn);
 
 if ($exists == 1) {
-    header("location: ../html/Negozio.php?username=$username");
+    header("location: ../Pagine/Negozio.php?username=$username");
 } else {
-    header("location: ../html/Login.html?errore=nonesiste");
+    header("location: ../Pagine/Login.php?errore=nonesiste");
 }
