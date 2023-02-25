@@ -1,0 +1,358 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Calibri';
+    background-color: #fafafa;
+    background: rgb(250, 250, 250);
+    background: linear-gradient(180deg, rgba(250, 250, 250, 1) 0%, rgba(250, 250, 250, 1) 90%, rgba(0, 0, 0, 0.26525821596244137) 99%);
+}
+
+/* Barra Logo */
+/* #region*/
+
+/* Barra con Logo */
+.barraLogo {
+    overflow: hidden;
+    background-color: #fafafa;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    padding-bottom: 10px;
+}
+
+/* Elemento della barra con logo*/
+.barraLogo .elemento {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.barraLogo .elementoDestra {
+    float: right;
+    align-self: right;
+    display: block;
+    color: black;
+    text-align: center;
+    font-size: x-large;
+    font-weight: normal;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.barraLogo .elementoDestraGrassetto {
+    float: right;
+    align-self: right;
+    display: block;
+    color: black;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+/* #endregion*/
+
+/* Barra Navigazione */
+/* #region */
+
+/* Barra di navigazione in alto */
+.barraNavigazione {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    z-index: 10;
+    height: 49px;
+}
+
+/* Testo regolare nella barra di navigazione in alto */
+.barraNavigazione .elemento {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px 16px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.barraNavigazione .selezionato {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    background-color: #5f5f5f;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+}
+
+/* Link nella barra di navigazione in alto */
+.barraNavigazione a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Hover nei link della barra di navigazione in alto */
+.barraNavigazione a:hover {
+    background: #ddd;
+    color: black;
+}
+
+.barraNavigazione .elementoDestra {
+    float: right;
+    align-self: right;
+    display: block;
+    color: #f2f2f2;
+    background-color: #5f5f5f;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+}
+
+.barraNavigazione .elementoDestraGrassetto {
+    float: right;
+    align-self: right;
+    display: block;
+    color: #f2f2f2;
+    background-color: #5f5f5f;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/* #endregion*/
+
+/* La pagina sotto alla barra di navigazione in alto */
+.main {
+    padding: 100px;
+    text-align: center;
+    font-family: "JetBrains Mono", monospace;
+}
+
+/* Layout a tabella*/
+/* #region */
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+}
+
+.row {
+    margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 100px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+/* #endregion */
+
+/* Carte */
+/* #region */
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+
+}
+
+.vertline {
+    border-left: 3px solid #5f5f5f;
+
+    height: 150px;
+    position: absolute;
+    left: 50%;
+}
+
+.saldo {
+    font-size: xx-large;
+    font-weight: bold;
+    color: green;
+}
+
+/* #endregion */
+
+/* Testo affiancato */
+/* #region */
+
+.containerTesto {
+    text-align: center;
+}
+
+.containerTesto .sinistra {
+    display: inline;
+}
+
+.containerTesto .destra {
+    display: inline;
+}
+
+/* #endregion */
+
+/* Box */
+/* #region */
+
+.box {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+.box h2 {
+    text-align: left;
+    font-size: x-large;
+
+    padding-left: 10px;
+}
+
+/* #endregion */
+
+/* Tabella per ordini */
+/* #region */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+    border: solid black 2px;
+}
+
+thead {
+    background-color: #3c9dff;
+    color: white;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #e5e5e5;
+}
+
+/* #endregion */
+
+/* form input[type=text] */
+/* #region */
+
+form input[type=text] {
+    height: 35px;
+    margin-top: 15px;
+
+    background: transparent;
+
+    border-bottom-width: 1px;
+    border-top: 5px;
+    border-right: 5px;
+    border-left: 5px;
+    border-radius: 5px;
+
+    color: black;
+
+    font-size: large;
+    font-family: 'Calibri';
+    text-align: center;
+    letter-spacing: 0.5px;
+
+    width: 100px;
+}
+
+/* #endregion */
+
+/* form input[type=submit] */
+/* #region */
+
+.btnAcquista {
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    line-height: 1;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    transition: box-shadow .15s, transform .15s;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+}
+
+.btnAcquista:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.btnAcquista:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.btnAcquista:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.btnDisabled {
+    background-image: radial-gradient(100% 100% at 100% 0, #989898 0, #717171 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(65, 65, 65, 0.4) 0 2px 4px, rgba(69, 69, 69, 0.3) 0 7px 13px -3px, rgba(111, 111, 111, 0.5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    line-height: 1;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    transition: box-shadow .15s, transform .15s;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+}
+
+/* #endregion*/
+
+/**/
